@@ -1,0 +1,497 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Potta+One&family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Potta+One&family=Yusei+Magic&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+}
+.head{
+    text-align: center;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.subtext {
+    text-align: center;
+    margin-top: -10px;
+    color: #555;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+   
+
+}
+
+.btn.primary {
+    background: #4CAF50;
+    color: white;
+}
+
+.btn.secondary {
+    background: #2196F3;
+    color: white;
+}
+
+.btn.admin {
+    background: #FF9800;
+    color: white;
+}
+
+.btn.info {
+    background: #607D8B;
+    color: white;
+}
+
+.btn.danger {
+    background: #F44336;
+    color: white;
+}
+
+.btn.back {
+    background: #777;
+    color: white;
+}
+
+.form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label {
+    font-weight: 500;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-body {
+    margin: 10px 0;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+} */
+ body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f2f5 25%, #d3dce6 100%);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    line-height: 1.6;
+    background-image: url("./pic/bank.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #cccccc;
+   }
+
+/* Header Styles */
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+    text-shadow:  3px 2px 29px  rgb(230, 228, 228);
+}
+
+/* Container Styles */
+.container {
+    max-width: 450px;
+    margin: 40px auto;
+    background: #f3eeee;
+    border-radius: 12px;
+    /* Rounds the corners of the container */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    /* Adds a shadow effect */
+    padding: 25px;
+    overflow: hidden;
+    animation: slideIn 1s ease-in-out;
+    box-shadow: 0px 10px 15px 0px;
+    /* Slide in animation for the container */
+}
+
+/* Section Styles */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    /* Display the active section */
+    animation: fadeIn 0.4s ease-in-out;
+    /* Animation for section appearance */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+        /* Starts from slightly above */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Ends at the normal position */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+        /* Starts from the left */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Ends at the normal position */
+    }
+}
+
+/* Subtext Styles */
+.subtext {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    /* Rounds the corners of buttons */
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+button:hover {
+    /* transform: scale(1.05); */
+    box-shadow:  5px 6px 10px  rgb(119, 113, 113);
+    transitioN: 0.56s;
+    /* Slightly enlarges button on hover */
+}
+
+/* Button Colors */
+.btn {
+    display: inline-block;
+    text-align: center;
+}
+
+.btn.primary {
+    background-color: #4399e9;
+    /* Blue background */
+    color: #ffffff;
+    /* White text */
+}
+
+.btn.secondary {
+    background-color: #6d8385;
+    /* Gray background */
+    color: #ffffff;
+    /* White text */
+}
+
+.btn.info {
+    background-color: #1abc9c;
+    /* Green background */
+    color: #ffffff;
+    /* White text */
+}
+
+.btn.admin {
+    background-color: #2c3e50;
+    /* Dark background */
+    color: #ffffff;
+    /* White text */
+}
+
+.btn.danger {
+    background-color: #e74c3c;
+    /* Red background */
+    color: #ffffff;
+    /* White text */
+}
+
+.btn.back {
+    background-color: #f39c12;
+    /* Orange background */
+    color: #ffffff;
+    /* White text */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+    /* Adds focus shadow */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Space between form elements */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    /* Rounds the corners of input fields */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for focus */
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    /* Changes border color on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+    /* Adds focus shadow */
+}
+
+input::placeholder {
+    color: #bdc3c7;
+    font-style: italic;
+}
+
+/* Button Group for Actions */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Space between buttons */
+    justify-content: center;
+}
+
+.button-group .btn {
+    flex: 1 1 130px;
+    text-align: center;
+    min-width: 100px;
+    /* Ensures minimum button width */
+}
+
+/* Accessibility Enhancements */
+button:focus-visible {
+    outline: 3px solid #f39c12;
+    /* Orange outline for keyboard navigation */
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        /* Ensures the container is not too wide on small screens */
+        margin: 20px;
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .button-group .btn {
+        flex: 1 1 80px;
+        /* Adjusts button size on small screens */
+        font-size: 14px;
+    }
+}
+
+/* Additional Enhancements */
+/* Add smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve contrast for better readability */
+body {
+    color: #333333;
+    /* Slightly darker text color */
+}
+
+/* Add hover effect to inputs */
+input:hover {
+    border-color: #888888;
+    /* Slightly darker border on hover */
+}
+
+/* Add active state for buttons */
+button:active {
+    transform: scale(0.98);
+    /* Slightly shrink button on active state */
+}
+
+/* Add better spacing for sections */
+.section {
+    margin-top: 20px;
+}
+
+/* Improve button accessibility */
+button:focus-visible {
+    outline: 3px solid #f39c12;
+    /* Orange outline for keyboard navigation */
+    outline-offset: 3px;
+    /* Improved outline offset */
+}
+
+
+/* Modal Styles */
+/* .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow to modal */
+}
+
+.modal-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    margin: 10px 0;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+} */
