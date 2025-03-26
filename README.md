@@ -1,4 +1,5 @@
-Index Page:
+@Digital Bank
+Home Page:
 
 ![Screenshot (44)](https://github.com/user-attachments/assets/7e3635c6-2931-4e42-870a-559817f29499)
 Registration Page:
